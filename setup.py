@@ -1,12 +1,18 @@
 from setuptools import setup
 
+
+def readme():
+    with open('README.rst') as f:
+        return f.read()
+
 setup(name='bechdel',
       author='Eric Persson',
       author_email='expersso5@gmail.com',
       version=0.1,
       license='CC0',
       description="Retrieve Movies' Bechdel Score",
-      url='https://github.com/expersson/bechdel',
+      long_description=readme(),
+      url='https://github.com/expersso/bechdel',
       keywords=['movies', 'API'],
       classifiers=[
            'Development Status :: 4 - Beta',

@@ -1,5 +1,7 @@
 Bechdel
 =======
+[![PyPI](https://img.shields.io/pypi/v/bechdel.svg)]()
+[![PyPI](https://img.shields.io/pypi/dm/bechdel.svg)]()
 [![Travis-CI Build Status](https://travis-ci.org/expersso/bechdel.svg?branch=master)](https://travis-ci.org/expersso/bechdel)
 [![codecov.io](https://codecov.io/github/expersso/bechdel/coverage.svg?branch=master)](https://codecov.io/github/expersso/bechdel?branch=master)
 
@@ -14,6 +16,7 @@ You can search for movies either by title...
 import bechdel
 movies = bechdel.getMoviesByTitle('terminator')
 len(movies) # 5
+print movies[0]
 
 {u'date': u'2015-07-02 06:24:18',
  u'dubious': u'0',
